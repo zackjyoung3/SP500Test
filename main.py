@@ -142,6 +142,7 @@ if __name__ == '__main__':
     else:
         print("Creating VOO stock prices db...")
         make_sp_sqlite()
+        sp_df = load_db()
 
     # the number of days in which stock purchases will be made
     trial_days = 254
